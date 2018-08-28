@@ -1,0 +1,16 @@
+$myFav: red;
+$myFav2: blue;
+
+body{
+	background-color: $myFav;
+
+	div{
+		display: flex;
+	}
+
+	h1 {
+		border: 1px $myFav2 solid;
+		color: purple;
+		font-size: 2em;
+	}
+}

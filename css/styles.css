@@ -1,0 +1,12 @@
+body {
+  background-color: red; }
+  body div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  body h1 {
+    border: 1px blue solid;
+    color: purple;
+    font-size: 2em; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBO0VBQ0Msc0JBSlUsRUFlVjtFQVpEO0lBSUUscUJBQWE7SUFBYixxQkFBYTtJQUFiLGNBQWEsRUFDYjtFQUxGO0lBUUUsdUJBQXlCO0lBQ3pCLGNBQWE7SUFDYixlQUFjLEVBQ2QiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiRteUZhdjogcmVkO1xuJG15RmF2MjogYmx1ZTtcblxuYm9keXtcblx0YmFja2dyb3VuZC1jb2xvcjogJG15RmF2O1xuXG5cdGRpdntcblx0XHRkaXNwbGF5OiBmbGV4O1xuXHR9XG5cblx0aDEge1xuXHRcdGJvcmRlcjogMXB4ICRteUZhdjIgc29saWQ7XG5cdFx0Y29sb3I6IHB1cnBsZTtcblx0XHRmb250LXNpemU6IDJlbTtcblx0fVxufVxuIl19 */
