@@ -38,11 +38,53 @@
 	}
 
 	main {
+		font-family: $fontBody;
+		// border: thin red solid;
 		flex: 1 0 40%;
+		text-align: center;
+		background-color: $backgroundcolor;
+
+		
+
+		.container{
+
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			.mariaimg, .claireimg, .aleximg {
+				img {
+					border-radius: 1em;
+					border: thin black solid;
+				}
+			}
+
+			.btn-maria {
+				background-color: $colorMaria;
+				a {
+					color: darken($colorMaria,40);
+				}
+
+			}
+			.btn-claire {
+				background-color: $colorClaire;
+				a {
+					color: darken($colorClaire,40);
+				}
+
+			}
+			.btn-alex {
+				background-color: $colorAlex;
+				a {
+					color: darken($colorAlex,50);
+				}
+
+			}
+		}
+
 	}
 
 	footer {
 
 	}
-	
+
 }
