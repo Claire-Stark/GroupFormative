@@ -1,3 +1,4 @@
+//------- Index JS for Behance API
 $(function(){
 
 	let key = 'dzZgAZranf7MqvWYJZPpgnFw9uaaZVcZ';
@@ -17,7 +18,7 @@ $(function(){
 	
 		});
 
-		let claireUser = 'https://api.behance.net/v2/users/michalskar0a49?client_id='+key;
+		let claireUser = 'https://api.behance.net/v2/users/cat-lv?client_id='+key;
 		$.ajax({
 			url:claireUser,
 			dataType:'jsonp', // p means padded json . 
@@ -45,3 +46,6 @@ $(function(){
 	}
 
 });
+
+//---- Claire JS for page.
+
