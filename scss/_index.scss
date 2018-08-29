@@ -4,7 +4,37 @@
 	flex-direction: column;
 
 	header {
+		height: 40vh;
+		background-image: url(../assets/fon1.jpg);
+		background-size: cover;
+		background-position: top;
+
+		position: relative;
 		
+		.logo-wrapper{
+			text-align: center;
+
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+
+		}
+		.logo{
+			font-family: $fontHeader;
+			color: $backgroundcolor;
+			text-shadow: 3px -3px 10px darken($colorClaire,20);
+			font-size: 3em;
+			text-transform: uppercase;
+			span{
+				color: $colorClaire;
+			}
+		}
+		.tagline{
+			color: $colorAlex;
+			font-family: $fontBody;
+			font-size: 1.5em;
+		}
 	}
 
 	main {
