@@ -1,11 +1,19 @@
 #index {
-	header {
 
+	display: flex;
+	flex-direction: column;
+
+	header {
+		
 	}
 
 	main {
+
 		border: thin red solid;
 		height: 50vh;
+
+		flex: 1 0 40%;
+
 	}
 
 	footer {
