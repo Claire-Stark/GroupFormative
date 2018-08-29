@@ -1,16 +1,16 @@
 $(function(){
 	let key = 'M0VKGUySTYGPYpuMrc2jNMaWgc37lAA5';
-	let urlProjects = 'https://api.behance.net/v2/users/pervinozcan/projects?client_id='+key;
+	let urlProjects = 'https://api.behance.net/v2/users/primoperezg/projects?client_id='+key;
 	// console.log(urlProject);
 	if('#alex'){
 		$.ajax({
 			url:urlProjects,
-			dataType:'jsonp',//bypass cross server security issue 'padded json'
+			dataType:'jsonp',
 			success:function(res){
 			
-			_(res.projects).each(function(project){//the list of the projects, each project
+			_(res.projects).each(function(project){
 				
-				$('<li>'+project.name+' <img src="'+project.covers.original+'" alt=""> <a href="project.html?id='+project.id+'">see more</a></li>').appendTo('ul.projects');// query string ;insert new tags   
+				$('<li>'+project.name+' <img src="'+project.covers.original+'" alt=""> <a href="project.html?id='+project.id+'">see more</a></li>').appendTo('ul.alex-projects');  
 
 			});
 

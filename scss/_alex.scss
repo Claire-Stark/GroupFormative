@@ -1,0 +1,20 @@
+.alex-projects{
+	list-style-type:none;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.alex-projects li{
+	flex: 0 0 20%;
+	margin: 0.5em;
+	border: 1px #ccc solid;
+	padding: 0.5em;
+	box-sizing: border-box;;
+}
+
+.alex-projects li img{
+	display: block;
+	width: 100%;
+	
+}
