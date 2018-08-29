@@ -11,7 +11,7 @@ $(function(){
 			success:function(res){
 				console.log(res)
 				var user = res.user;
-				$('<img src="'+user.images[276]+'">').appendTo('.container .mariaimg')
+				$('<img src="'+user.images[230]+'">').appendTo('.container .mariaimg')
 				
 			}
 	
@@ -24,7 +24,7 @@ $(function(){
 			success:function(res){
 				console.log(res)
 				var user = res.user;
-				$('<img src="'+user.images[276]+'">').appendTo('.container .claireimg')
+				$('<img src="'+user.images[230]+'">').appendTo('.container .claireimg')
 				
 			}
 	
@@ -37,7 +37,7 @@ $(function(){
 			success:function(res){
 				console.log(res)
 				var user = res.user;
-				$('<img src="'+user.images[276]+'">').appendTo('.container .aleximg')
+				$('<img src="'+user.images[230]+'">').appendTo('.container .aleximg')
 				
 			}
 	

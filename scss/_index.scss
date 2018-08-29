@@ -4,7 +4,8 @@
 	flex-direction: column;
 
 	header {
-		height: 40vh;
+
+		height: 35vh;
 		background-image: url(../assets/fon1.jpg);
 		background-size: cover;
 		background-position: top;
@@ -39,7 +40,6 @@
 
 	main {
 		font-family: $fontBody;
-		// border: thin red solid;
 		flex: 1 0 40%;
 		text-align: center;
 		background-color: $backgroundcolor;
