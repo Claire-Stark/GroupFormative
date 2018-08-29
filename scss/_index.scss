@@ -4,15 +4,82 @@
 	flex-direction: column;
 
 	header {
+
+		height: 35vh;
+		background-image: url(../assets/fon1.jpg);
+		background-size: cover;
+		background-position: top;
+
+		position: relative;
 		
+		.logo-wrapper{
+			text-align: center;
+
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+
+		}
+		.logo{
+			font-family: $fontHeader;
+			color: $backgroundcolor;
+			text-shadow: 3px -3px 10px darken($colorClaire,20);
+			font-size: 3em;
+			text-transform: uppercase;
+			span{
+				color: $colorClaire;
+			}
+		}
+		.tagline{
+			color: $colorAlex;
+			font-family: $fontBody;
+			font-size: 1.5em;
+		}
 	}
 
 	main {
-
-		border: thin red solid;
-		height: 50vh;
-
+		font-family: $fontBody;
 		flex: 1 0 40%;
+		text-align: center;
+		background-color: $backgroundcolor;
+
+		
+
+		.container{
+
+			padding-bottom: 1em;
+			padding-top: 1em;
+
+			.mariaimg, .claireimg, .aleximg {
+				img {
+					border-radius: 1em;
+					border: thin black solid;
+				}
+			}
+
+			.btn-maria {
+				background-color: $colorMaria;
+				a {
+					color: darken($colorMaria,40);
+				}
+
+			}
+			.btn-claire {
+				background-color: $colorClaire;
+				a {
+					color: darken($colorClaire,40);
+				}
+
+			}
+			.btn-alex {
+				background-color: $colorAlex;
+				a {
+					color: darken($colorAlex,50);
+				}
+
+			}
+		}
 
 	}
 
