@@ -20,8 +20,8 @@ $(function(){
 	});
 
 	//Show individual projects
-	let singleProjectHTML = $('#templateSingleProject').text();
-	let singleProjectTemplate = Template7(singleProjectHTML).compile();
+	// let singleProjectHTML = $('#templateSingleProject').text();
+	// let singleProjectTemplate = Template7(singleProjectHTML).compile();
 	$('#portfolioModal1').on('show.bs.modal',function(e){
 		
 		let target = e.relatedTarget;
@@ -32,7 +32,7 @@ $(function(){
 			dataType:'jsonp',
 			success:function(res){
 				let project = res.project;				
-				var output = singleProjectTemplate(project);
+				var output = projectTemplate(project);
 				$('.single-project-container').empty();
 				$('.single-project-container').append(output);
 			}
