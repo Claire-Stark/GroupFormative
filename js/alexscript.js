@@ -31,8 +31,7 @@ $(function(){
 			url:urlProject,
 			dataType:'jsonp',
 			success:function(res){
-				let project = res.project;
-				
+				let project = res.project;				
 				var output = singleProjectTemplate(project);
 				$('.single-project-container').empty();
 				$('.single-project-container').append(output);
