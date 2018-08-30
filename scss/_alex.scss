@@ -1,20 +1,49 @@
-.alex-projects{
-	list-style-type:none;
-	display: flex;
-	flex-wrap: wrap;
+#alex{
 
-}
+	.alex-projects{
+		list-style-type:none;
+		display: flex;
+		justify-content:flex-start;
+		flex-wrap: wrap;
+		font-family: $fontHeader;
+		li{
+			flex: 0 0 20%;
+			margin: $spacer;
+			background-color: $colorAlex;
+			padding: $spacer;
+			box-sizing: border-box;
+			a{
+				font-family: $fontBody;
+				// margin-left:30%;
+			}
+			img{
+				display: block;
+				width: 100%;
 
-.alex-projects li{
-	flex: 0 0 20%;
-	margin: 0.5em;
-	border: 1px #ccc solid;
-	padding: 0.5em;
-	box-sizing: border-box;;
-}
+			}
+		}
 
-.alex-projects li img{
-	display: block;
-	width: 100%;
-	
+	}
+
+	footer {
+		height: 10vh;
+		background-color: darken($colorClaire,2);
+		a{
+			color: black;
+		}
+		ul{
+			list-style-type:none;
+		}
+		.box-footer{
+			display:flex;
+			padding-top:2%;
+			justify-content:space-around;
+			font-family:$fontBody;
+			color:white;
+			.column3 p{
+				font-weight:400;
+				color:black;	
+			}
+		}
+	}
 }
