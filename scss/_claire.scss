@@ -2,8 +2,68 @@
 	height: 100vh;
 	background-color: $backgroundcolor;
 	
-	header {
+	header.staff-header{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
 
+		height: 10vh;
+		min-height: 3em;
+		background-color: darken($colorMaria,5);
+
+		.logo{
+			padding-left: 1em;
+			font-family: $fontHeader;
+			color: $backgroundcolor;
+			text-shadow: 3px -3px 10px darken($colorMaria,20);
+			font-size: 2em;
+			text-transform: uppercase;
+			span{
+				color: $colorMaria;
+			}
+		}
+		.staff-nav{
+			flex: 0 0 40%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+
+			font-family: $fontBody;
+			text-transform: uppercase;
+
+			list-style-type: none;
+
+			font-size: 1.5em;
+
+			color: $backgroundcolor;
+			text-shadow: 3px -3px 10px darken($colorMaria,20);
+
+			padding:0;
+			margin:0;
+
+			.color-claire>a{
+				color: $colorClaire;
+				text-shadow: 3px -1px 10px darken($colorMaria,30);
+			}
+			.color-alex>a{
+				color: $colorAlex;
+				text-shadow: 3px -1px 10px darken($colorMaria,30);
+			}
+			.color-maria>a{
+				color: $colorMaria;
+				text-shadow: 3px -1px 10px darken($colorMaria,30);
+			}
+			a{
+				transition: all ease 0.5s;
+				color: $backgroundcolor;
+				&:hover{
+					text-decoration: none;
+					font-size: 1.25em;
+				}
+			}
+		}
 	}
 
 	main {
@@ -60,6 +120,7 @@
 			color: darken($colorMaria, 20);
 			font-family: $fontBody;
 			box-shadow: 0 2px 5px;
+			font-size: 2em;
 		}
 
 		.projects img{
