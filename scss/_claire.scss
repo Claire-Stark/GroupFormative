@@ -8,6 +8,65 @@
 
 	main {
 
+		width: 98vw;
+
+		h1 {
+			font-family: $fontHeader;
+		}
+		.name {
+			color: darken($colorMaria, 10);
+			font-family: $fontHeader;
+			text-align: center;
+			margin-top: 1em;
+		}
+
+	
+		.aboutme {
+			border-top: thin $colorMaria solid;
+			border-bottom: thin $colorMaria solid;
+			margin-left: 4em;
+			margin-right: 4em;
+			text-align: center;
+			font-family: $fontBody;
+			color: darken($colorClaire, 20);
+			padding-top: 1em;
+			padding-bottom: 1em;
+			
+		}
+		#projects {
+			text-align: center;
+			margin-top: 1.5em;
+
+			a {
+				color: darken($colorMaria, 20);
+				text-decoration: none;
+			}
+		}
+		.projects{
+			display:flex;
+			flex-wrap:wrap;
+			list-style-type: none;
+			margin-right: 1.5em;
+		}
+
+		.projects li{
+			flex: 1 0 20%;
+			margin: 0.5em;
+			border: 1px $colorClaire solid;
+			padding: 0.5em;
+			box-sizing: border-box;
+			border-radius: 1em;
+			text-align: center;
+			color: darken($colorMaria, 20);
+			font-family: $fontBody;
+			box-shadow: 0 2px 5px;
+		}
+
+		.projects img{
+			display:block;
+			width: 100%;
+			
+		}
 	}
 
 	footer {
