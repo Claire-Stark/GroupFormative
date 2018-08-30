@@ -10,7 +10,7 @@ $(function(){
 			
 			_(res.projects).each(function(project){
 				
-				$('<li><img src="'+project.covers.original+'" alt=""> '+project.name+'<a href="project.html?id='+project.id+'"></a></li>').appendTo('ul.alex-projects');  
+				$('<li><img src="'+project.covers.original+'" alt=""> '+project.name+'</li>').appendTo('ul.alex-projects');  
 
 			});
 
