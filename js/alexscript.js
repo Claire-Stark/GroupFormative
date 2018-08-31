@@ -22,22 +22,22 @@ $(function(){
 	//Show individual projects
 	// let singleProjectHTML = $('#templateSingleProject').text();
 	// let singleProjectTemplate = Template7(singleProjectHTML).compile();
-	$('#portfolioModal1').on('show.bs.modal',function(e){
+	// $('#portfolioModal1').on('show.bs.modal',function(e){
 		
-		let target = e.relatedTarget;
-		let projectid = $(target).data('projectid');
-		let urlProject = 'http://www.behance.net/v2/projects/'+projectid+'?api_key='+key;
-		$.ajax({
-			url:urlProject,
-			dataType:'jsonp',
-			success:function(res){
-				let project = res.project;				
-				var output = projectTemplate(project);
-				$('.single-project-container').empty();
-				$('.single-project-container').append(output);
-			}
-		});
+	// 	let target = e.relatedTarget;
+	// 	let projectid = $(target).data('projectid');
+	// 	let urlProject = 'http://www.behance.net/v2/projects/'+projectid+'?api_key='+key;
+	// 	$.ajax({
+	// 		url:urlProject,
+	// 		dataType:'jsonp',
+	// 		success:function(res){
+	// 			let project = res.project;				
+	// 			var output = projectTemplate(project);
+	// 			$('.single-project-container').empty();
+	// 			$('.single-project-container').append(output);
+	// 		}
+	// 	});
 
-	});
+	// });
 
 });
